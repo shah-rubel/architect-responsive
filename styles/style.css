@@ -18,7 +18,7 @@ font-family: 'Work Sans', sans-serif;
 .text{
 color: #424242;
 
-font-size: 18px;
+font-size: 1rem;
 
 font-weight: 500;
 line-height: 26px; /* 144.444% */
@@ -56,18 +56,18 @@ nav>ul>li>a{
     text-decoration: none;
 }
 .nav{
-    font-size: 45px;
+    font-size: 3rem;
 }
 
 /* Banner desing */
 .banner-section{
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    
    
-    align-items: center;
+ 
 }
 .banner-content{
+    margin: 0 auto;
     max-width: 800px;
 }
 .banner{
@@ -77,8 +77,9 @@ nav>ul>li>a{
     text-align: center;
     font-weight: 400;
 }
-.banner-img{
-    margin-top:50px;
+.banner-section img{
+    margin-top: 50px;
+    width: 100%;
 }
 /* responsive media */
 @media screen and (max-width:576px) {
@@ -87,6 +88,9 @@ nav>ul>li>a{
     }
     nav>ul{
         flex-direction: column;
+    }
+    .header{
+        padding: 20px;
     }
     
 }
