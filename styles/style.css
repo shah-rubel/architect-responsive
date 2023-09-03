@@ -162,6 +162,26 @@ flex-shrink: 0;
     font-size: 1.5rem;
 }
 
+/* fact */
+.some-facts-section{
+    padding: 130px 240px;
+}
+.facts{
+    display: grid;
+    grid-gap: 124px;
+    margin-top: 100px;
+    grid-template-columns: repeat(4,1fr);
+}
+.fact{
+    display: inline;
+    text-align: center;
+    padding: 45px 97px;
+    border-radius: 8px;
+border: 1px solid #FF900E;
+
+
+}
+
 /* responsive media */
 @media screen and (max-width:576px) {
     nav{
@@ -199,5 +219,11 @@ flex-shrink: 0;
     }
     .content{
         padding: 5px;
+    }
+    .some-facts-section{
+        padding: 20px;
+    }
+    .facts{
+        grid-template-columns: 1fr;
     }
 }
