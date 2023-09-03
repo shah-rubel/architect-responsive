@@ -81,6 +81,34 @@ nav>ul>li>a{
     margin-top: 50px;
     width: 100%;
 }
+/* Feature desin */
+.feature-section{
+    display: flex;
+    padding: 85px 300px;
+    justify-content: center;
+    align-items: center;
+}
+.feature-imgs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+}
+.feature-text{
+    margin-left: 75px;
+}
+.feature-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.gray{
+    color:#727272;
+}
+.black{
+    color: black;
+}
+.orange{
+    color:#FF900E;
+}
 /* responsive media */
 @media screen and (max-width:576px) {
     nav{
@@ -92,5 +120,11 @@ nav>ul>li>a{
     .header{
         padding: 20px;
     }
-    
+    .feature-section{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .feature-imgs{
+        grid-template-columns: 1fr;
+    }
 }
